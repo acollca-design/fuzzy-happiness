@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🧮 Calculadora</h1>
+        <p class="info">Enteros entre <strong>-99999</strong> y <strong>99999</strong></p>
+
+        <div class="field">
+            <label for="a">Número A</label>
+            <input type="text" id="a" placeholder="Ej: 123" autocomplete="off">
+        </div>
+
+        <div class="field">
+            <label for="b">Número B</label>
+            <input type="text" id="b" placeholder="Ej: 45" autocomplete="off">
+        </div>
+
+        <div class="buttons">
+            <button type="button" data-op="suma">➕ Suma</button>
+            <button type="button" data-op="resta">➖ Resta</button>
+            <button type="button" data-op="multiplicacion">✖ Multiplicación</button>
+            <button type="button" data-op="potencia">^ Potencia</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
